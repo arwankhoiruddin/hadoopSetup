@@ -18,6 +18,12 @@
 
 <configuration>
 <property>
+  <name>hadoop.tmp.dir</name>
+  <value>/home/hduser/hdfs/tmp</value>
+  <description>A base for other temporary directories</description>
+</property>
+
+<property>
   <name>fs.default.name</name>
   <value>hdfs://master:54310</value>
   <description>The name of the default file system.  A URI whose

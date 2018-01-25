@@ -25,4 +25,15 @@
   The default is used if replication is not specified in create time.
   </description>
 </property>
+
+<property>
+  <name>dfs.namenode.name.dir</name>
+  <value>/home/hduser/hdfs/namenode</value>
+</property>
+
+<property>
+  <name>dfs.datanode.name.dir</name>
+  <value>/home/hduser/hdfs/datanode</value>
+</property>
+
 </configuration>
