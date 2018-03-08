@@ -1,5 +1,4 @@
-HDPATH="/home/hduser/hadoop/hadoop-2.9.0/etc/hadoop/"
-echo $HDPATH
+HDPATH=$1
 
 cp core-site.xml $HDPATH
 cp hadoop-env.sh $HDPATH
