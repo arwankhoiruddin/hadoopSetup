@@ -1,13 +1,14 @@
 127.0.0.1	localhost
-192.168.0.155	localhost
+10.0.0.251	localhost
 
 # 127.0.1.1	ubhd
 
 # for hadoop cluster
-192.168.0.155	master
-192.168.0.156	slave1
-192.168.0.164	slave2
-192.168.0.173	slave3
+10.0.0.251	d1
+10.0.0.252	d2
+10.0.0.253	d3
+10.0.0.254	d4
+10.0.0.255	d5
 
 # The following lines are desirable for IPv6 capable hosts
 # ::1     localhost ip6-localhost ip6-loopback
