@@ -25,6 +25,7 @@ In all those computers, edit your `/etc/hosts` as follows
 192.168.0.101		slave1
 192.168.0.102		slave2
 ```
+If you have `127.0.1.1` in your `hosts`, remove that line
 
 ### Prepare SSH Access from master to all slaves
 
