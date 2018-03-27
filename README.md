@@ -6,6 +6,14 @@ After you do some steps below, you can just execute `deploy.sh` to automagically
 
 So, before you start, please do the following steps:
 
+### Install the packages needed
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
+
 ### Update `/etc/hosts`
 
 Remove all lines in `/etc/hosts` and put all the connected computers. For example, your Hadoop cluster will contain three computers with IP address `192.168.0.100` as `master`, `192.168.0.101` as `slave1`, and `192.168.0.102` as `slave2`. 
@@ -57,7 +65,7 @@ Add the following lines in `~/.bashrc`
 export HADOOP_HOME=/usr/local/hadoop
 
 # Set JAVA_HOME (we will also configure JAVA_HOME directly for Hadoop later on)
-export JAVA_HOME=/usr/lib/jvm/java-6-sun
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 # Some convenient aliases and functions for running Hadoop-related commands
 unalias fs &> /dev/null
