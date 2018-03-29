@@ -24,7 +24,7 @@ mkdir -p /home/hduser/hdfs/namenode
 echo "directories needed by Hadoop are created"
 
 # copy the files into the desired target
-cp ./*.xml ../hd29/etc/hadoop/
-cp hadoop-env.sh ../hd29/etc/hadoop/
-cp slaves ../hd29/etc/hadoop/
+cp ./*.xml /usr/local/hadoop/etc/hadoop/
+cp hadoop-env.sh /usr/local/hadoop/etc/hadoop/
+cp slaves /usr/local/hadoop/etc/hadoop/
 echo "files have been copied. If you are working on master, copy masters into etc/hadoop folder"
