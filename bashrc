@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 # Set Hadoop-related environment variables
-export HADOOP_HOME=/home/hduser/hadoop/hadoop-2.9.0
+export HADOOP_HOME=/usr/local/hadoop
 
 # Set JAVA_HOME (we will also configure JAVA_HOME directly for Hadoop later on)
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
