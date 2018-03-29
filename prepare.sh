@@ -17,3 +17,13 @@ cd ..
 sudo python setup.py install
 
 sudo service ssh restart
+
+sudo useradd -c "Hadoop user" hduser
+sudo passwd hduser
+
+usermod -aG sudo hduser
+
+mkdir -P /home/hduser/.ssh
+sudo chown -R hduser:hduser /home/hduser/.ssh
+
+su hduser
