@@ -5,6 +5,7 @@
 
 # update ~/.bashrc
 cp ./bashrc ~/.bashrc
+source ~/.bashrc
 echo "bashrc updated"
 
 # disable ipv6
@@ -18,5 +19,8 @@ mkdir -p /home/hduser/hdfs/datanode
 mkdir -p /home/hduser/hdfs/namenode
 echo "directories needed by Hadoop are created"
 
-# copy files into the desired target
-echo "now you can edit and run ./copyconf.sh to copy the configurations into your hadoop"
+# copy the files into the desired target
+cp ./*.xml ../hd29/etc/hadoop/
+cp hadoop-env.sh ../hd29/etc/hadoop/
+cp slaves ../hd29/etc/hadoop/
+echo "files have been copied. If you are working on master, copy masters into etc/hadoop folder"
