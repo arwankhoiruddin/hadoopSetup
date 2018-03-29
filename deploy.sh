@@ -8,6 +8,10 @@ cp ./bashrc ~/.bashrc
 source ~/.bashrc
 echo "bashrc updated"
 
+# update /etc/hosts
+cp ./hosts /etc/hosts
+echo "/etc/hosts is updated"
+
 # disable ipv6
 sudo cp ./sysctl.conf /etc/sysctl.conf
 sudo sysctl -p
