@@ -16,4 +16,8 @@ curl -O https://raw.githubusercontent.com/arwankhoiruddin/heterodoop/master/mini
 cd ..
 sudo python setup.py install
 
+curl -O http://www-eu.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz
+tar xvfz hadoop-2.9.0.tar.gz
+mv hadoop-2.9.0 hd29
+
 sudo service ssh restart
