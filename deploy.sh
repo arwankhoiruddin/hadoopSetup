@@ -1,8 +1,3 @@
-# install jdk8
-# sudo add-apt-repository ppa:webupd8team/java
-# sudo apt-get update
-# sudo apt-get install oracle-java8-installer
-
 # update ~/.bashrc
 cp ./bashrc ~/.bashrc
 source ~/.bashrc
@@ -21,6 +16,7 @@ echo "ipv6 disabled"
 mkdir -p /home/hduser/hdfs/tmp
 mkdir -p /home/hduser/hdfs/datanode
 mkdir -p /home/hduser/hdfs/namenode
+sudo chmod -R hduser:hduser /home/hduser/hdfs
 echo "directories needed by Hadoop are created"
 
 # copy the files into the desired target
