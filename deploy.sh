@@ -16,7 +16,7 @@ echo "ipv6 disabled"
 mkdir -p /home/hduser/hdfs/tmp
 mkdir -p /home/hduser/hdfs/datanode
 mkdir -p /home/hduser/hdfs/namenode
-sudo chmod -R hduser:hduser /home/hduser/hdfs
+sudo chown -R hduser:hduser /home/hduser/hdfs
 echo "directories needed by Hadoop are created"
 
 # copy the files into the desired target
