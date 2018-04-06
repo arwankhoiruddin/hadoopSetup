@@ -7,7 +7,7 @@ sudo apt-get install oracle-java8-installer ansible git aptitude firefox openssh
 cd ..
 mkdir riset
 cd riset
-curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/cfe35f3595418a14ae25db205ecd1c83af3825e4/customDockerNetworkVolume.py
+curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/183e89f506d9e588c9ae3f4dd8dc1ed1b34f89cb/customDockerNetworkVolume.py
 mv customDockerNetworkVolume.py mynet.py
 chmod +x mynet.py
 
