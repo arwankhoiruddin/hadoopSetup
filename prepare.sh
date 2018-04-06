@@ -5,7 +5,7 @@ sudo apt-get install software-properties-common oracle-java8-installer ansible g
 cd ..
 mkdir riset
 cd riset
-curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/183e89f506d9e588c9ae3f4dd8dc1ed1b34f89cb/customDockerNetworkVolume.py
+curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/2f3919fbbf115598cf4952362961be9fcd0071ba/customDockerNetworkVolume.py
 mv customDockerNetworkVolume.py mynet.py
 chmod +x mynet.py
 
