@@ -17,6 +17,7 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+
 <property>
   <name>mapred.job.tracker</name>
   <value>d1:54311</value>
@@ -25,4 +26,25 @@
   and reduce task.
   </description>
 </property>
+  
+<property>
+  <name>mapreduce.framework.name</name>
+  <value>yarn</value>
+</property>
+
+<property>
+  <name>mapreduce.jobhistory.address</name>
+  <value>0.0.0.0:10020</value>
+</property>
+<property>
+  <name>mapreduce.jobhistory.webapp.address</name>
+  <value>0.0.0.0:19888</value>
+</property>
+
+<property>
+  <description>To set the value of tmp directory for map and reduce tasks.</description>
+  <name>mapreduce.task.tmp.dir</name>
+  <value>/var/lib/hadoop-mapreduce/cache/${user.name}/tasks</value>
+</property>
+  
 </configuration>
