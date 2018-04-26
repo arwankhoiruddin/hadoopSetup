@@ -16,6 +16,11 @@
 
 <!-- Site specific YARN configuration properties -->
 <property>
+  <name>yarn.resourcemanager.hostname</name>
+  <value>d1</value>
+</property>
+  
+<property>
   <name>yarn.scheduler.minimum-allocation-mb</name>
   <value>1024</value>
 </property>
