@@ -5,13 +5,16 @@ sudo apt-get install software-properties-common oracle-java8-installer ansible g
 cd ..
 mkdir riset
 cd riset
-curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/2f3919fbbf115598cf4952362961be9fcd0071ba/customDockerNetworkVolume.py
+curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/4997904dc948d866963780e0fbff1a5e94ff9577/customDockerNetworkVolume.py
 mv customDockerNetworkVolume.py mynet.py
 chmod +x mynet.py
 
 git clone https://github.com/containernet/containernet.git
 cd containernet/ansible
 sudo ansible-playbook -i "localhost," -c local install.yml
+
+sudo groupadd docker
+sudo gpasswd -a $USER docker
 
 docker pull arwankhoiruddin/heterodoop
 
