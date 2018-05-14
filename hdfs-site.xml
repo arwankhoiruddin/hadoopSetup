@@ -32,8 +32,13 @@
 </property>
 
 <property>
-  <name>dfs.datanode.name.dir</name>
+  <name>dfs.datanode.data.dir</name>
   <value>/home/hduser/hdfs/datanode</value>
+</property>
+
+<property>
+  <name>dfs.blocksize</name>
+  <value>67108864</value>
 </property>
 
 </configuration>
