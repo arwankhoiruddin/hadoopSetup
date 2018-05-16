@@ -3,8 +3,8 @@ sudo apt-get update
 sudo apt-get install software-properties-common oracle-java8-installer ansible git aptitude firefox openssh-server
 
 cd ..
-mkdir riset
-cd riset
+mkdir research
+cd research
 curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/4997904dc948d866963780e0fbff1a5e94ff9577/customDockerNetworkVolume.py
 mv customDockerNetworkVolume.py mynet.py
 chmod +x mynet.py
