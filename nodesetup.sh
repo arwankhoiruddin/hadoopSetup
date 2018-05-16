@@ -1,3 +1,4 @@
+su hduser
 sudo ./deploy.sh
-source ~/.bashrc
+. ~/.bashrc
 sudo service ssh restart
