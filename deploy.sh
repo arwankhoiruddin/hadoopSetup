@@ -1,6 +1,6 @@
 # update ~/.bashrc
 cp ./bashrc ~/.bashrc
-. ~/.bashrc
+exec bash
 echo "bashrc updated"
 
 # update /etc/hosts
