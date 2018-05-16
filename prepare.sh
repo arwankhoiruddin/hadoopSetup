@@ -28,5 +28,3 @@ curl -O http://www-eu.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.ta
 tar xvfz hadoop-2.9.0.tar.gz
 mv hadoop-2.9.0 hd29
 rm hadoop-2.9.0.tar.gz
-
-sudo service ssh restart
