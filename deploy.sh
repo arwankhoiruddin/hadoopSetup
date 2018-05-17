@@ -1,8 +1,3 @@
-# update ~/.bashrc
-cp ./bashrc ~/.bashrc
-exec bash
-echo "bashrc updated"
-
 # update /etc/hosts
 cp ./hosts /etc/hosts
 echo "/etc/hosts is updated"
