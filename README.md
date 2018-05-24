@@ -1,6 +1,6 @@
 # Hadoop Setup
 
-This will create a Hadoop cluster using containernet. In other words, you will have a Hadoop cluster containing some Docker containers. The cluster can be created on a single machine or a single cloud instance. If you intend to create a Hadoop cluster containing several nodes of real machines, you can setup your cluster using Apache Ambari.
+This will create a Hadoop cluster using containernet. In other words, you will have a Hadoop cluster containing some Docker containers. The cluster can be created on a single machine or a single cloud instance. If you intend to create a Hadoop cluster containing several nodes of real machines, you can setup your cluster using Apache Ambari instead.
 
 These steps are tested for Google Cloud Platform and Vultr. However, I think as long as you follow the steps, you can use it for other cloud services and servers.
 
