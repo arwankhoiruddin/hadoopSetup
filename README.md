@@ -6,7 +6,7 @@ These steps are tested for Google Cloud Platform and Vultr. However, I think as 
 
 ## Use root user
 
-Don't worry, we will not install anything in your root account. We use root because all settings in the cloud are designed for root user. 
+Don't worry, we will not install anything in your root account. We use root because all settings in the cloud are designed to run using root user.
 
 ```
 $ sudo su
