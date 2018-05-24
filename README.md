@@ -226,7 +226,7 @@ containernet> xterm d2 d3 d4
 
 This command will open 3 (three) xterminal for you. If you are working on GDP or Vultr, it may take some time before the xterminal comes out.
 
-So basically each xterminal is a terminal for node `d1`, `d2` and `d3`. For each xterminal, do the followings (in this step, in one of the command, it will ask you for a password. Don't worry, the password for the node is `arwan`).
+Basically each xterminal is a terminal interface for node `d1`, `d2` and `d3`. For each xterminal, do the followings (in this step, in one of the command, it will ask you for a password. Don't worry, the password for the node is `arwan`).
 
 ```
 # su hduser
@@ -235,7 +235,7 @@ $ sudo ./deploy.sh
 password:
 ```
 
-`deploy.sh` will copy all the hadoop configuration as well as the networking and local configuration (e.g. `/etc/hosts` and `bashrc`). However, you need to restart the terminal using the following command so the `bashrc` is updated.
+`deploy.sh` will copy all the hadoop configuration as well as the networking and local configuration (e.g. `/etc/hosts` and `bashrc`). However, you need to reload the `bashrc` using the following command.
 
 ``` 
 $ source ~/.bashrc
@@ -247,17 +247,17 @@ Last step, on each xterminal, you need to start the SSH Server
 $ sudo service ssh restart
 ```
 
-Do the above steps for all xterminal `d2`, `d3` and `d4`, then you can close all the xterminal.
+Do the above steps for `d2`, `d3` and `d4`, then you can close all the xterminal.
 
 ### Set the master
 
-Now go back to your terminal again. Now you open xterminal for the master node (`d1`).
+Now go back to your terminal again. Open xterminal for the master node (`d1`).
 
 ```
 containernet> xterm d1
 ```
 
-After the xterminal is opened, you do the exact same steps with the slaves i.e.
+After the xterminal is opened, do the exact same steps with the slaves i.e.
 
 ```
 # su hduser
