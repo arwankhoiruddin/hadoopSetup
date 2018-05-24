@@ -43,7 +43,7 @@ The key's randomart image is:
 ```
 ## Work with Google Cloud Platform (GCP)
 
-Google is so generous. They will give you $300 credit that you can use it in GCP within 1 year. After you activate your GCP account and get the credit, you can start the following steps
+Google is so generous. They will give you $300 credit that you can use it in GCP within 1 year. After you activate your GCP account and get the credit, you can go to `https://console.cloud.google.com/` and do the following steps
 
 ### Create Instansce
 
