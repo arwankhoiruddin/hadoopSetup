@@ -94,7 +94,7 @@ Warning: Permanently added '35.238.22.12' (ECDSA) to the list of known hosts.
 
 
 Last login: Thu May 24 09:34:03 2018 from 183.171.232.237
-root@instance-1:~#
+root@hadoop:~#
 ```
 
 ## Prepare The Cluster
@@ -157,9 +157,9 @@ For Oracle Java 10, see a different PPA: https://www.linuxuprising.com/2018/04/i
 Press [ENTER] to continue or ctrl-c to cancel adding it
 ```
 
-Just press `[enter]` then it will continue automagically. In the middle, you will need to confirm again. Just click `OK`.
+Just press `[enter]` then it will continue automagically. In the middle, you will need to confirm again. Just click `OK` or `yes`.
 
-When you reach these lines, now you can put your smile in your face! You have what you need to setup a cluster.
+When you reach these lines, you can start to put your smile in your face! You have what you need to setup a cluster.
 
 ```
 hadoop-2.9.0/share/hadoop/common/jdiff/Apache_Hadoop_Common_2.7.2.xml
@@ -216,7 +216,7 @@ d4 -> d1 d2 d3
 containernet> 
 ```
 
-Now you have a cluster that has 4 nodes i.e. `d1, d2, d3, and d4`. 
+Now you have a cluster that has 4 nodes i.e. `d1, d2, d3`, and `d4`. 
 
 ### Set the slaves
 
@@ -235,7 +235,7 @@ $ sudo ./deploy.sh
 password:
 ```
 
-`deploy.sh` will copy all the hadoop configuration as well as the networking and local configuration (e.g. /etc/hosts and bashrc). However, you need to restart the terminal using the following command so the `bashrc` is updated.
+`deploy.sh` will copy all the hadoop configuration as well as the networking and local configuration (e.g. `/etc/hosts` and `bashrc`). However, you need to restart the terminal using the following command so the `bashrc` is updated.
 
 ``` 
 $ source ~/.bashrc
