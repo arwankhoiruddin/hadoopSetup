@@ -16,6 +16,7 @@ mkdir -p /home/hduser/hdfs/tmp
 mkdir -p /home/hduser/hdfs/datanode
 mkdir -p /home/hduser/hdfs/namenode
 sudo chown -R hduser:hduser /home/hduser/hdfs
+sudo chmod -R 766 /home/hduser/hdfs
 echo "directories needed by Hadoop are created"
 
 # copy the files into the desired target
