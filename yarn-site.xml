@@ -55,12 +55,14 @@ If you want to use non-FIFO default scheduler, please uncomment any of the follo
 <!--
 FAIR SCHEDULER and some configurations (values here are the defaults)
 Details: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/FairScheduler.html
-
+-->
+  
 <property>
   <name>yarn.resourcemanager.scheduler.class</name>
   <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
 </property>
 
+<!--
 <property>
   <name>yarn.scheduler.fair.preemption</name>
   <value>false</value>
