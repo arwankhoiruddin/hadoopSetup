@@ -23,13 +23,83 @@
 <!--
 If this part is commented, it will use FIFO Scheduler. 
 If you want to use other default scheduler, please uncomment any of the following schedulers
+-->
+
+<!--
+FAIR SCHEDULER and some configurations (values here are the defaults)
+Details: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/FairScheduler.html
 
 <property>
   <name>yarn.resourcemanager.scheduler.class</name>
   <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
 </property>
 
-  
+<property>
+  <name>yarn.scheduler.fair.preemption</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.preemption.cluster-utilization-threshold</name>
+  <value>0.8f</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.sizebasedweight</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.assignmultiple</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.preemption</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.preemption</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.dynamic.max.assign</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.max.assign</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.locality.threshold.node</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.locality.threshold.rack</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.allow-undeclared-pools</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.fair.update-interval-ms</name>
+  <value>false</value>
+</property>
+
+
+-->
+
+<!--
+CAPACITY SCHEDULER and some configurations (values here are the defaults)
+Details: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html
 <property>
   <name>yarn.resourcemanager.scheduler.class</name>
   <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler..capacity.CapacityScheduler</value>
