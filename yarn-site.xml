@@ -20,6 +20,23 @@
   <value>d1</value>
 </property>
   
+<!--
+If this part is commented, it will use FIFO Scheduler. 
+If you want to use other default scheduler, please uncomment any of the following schedulers
+
+<property>
+  <name>yarn.resourcemanager.scheduler.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
+</property>
+
+  
+<property>
+  <name>yarn.resourcemanager.scheduler.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler..capacity.CapacityScheduler</value>
+</property>
+
+-->
+  
 <property>
   <name>yarn.scheduler.minimum-allocation-mb</name>
   <value>1024</value>
