@@ -20,9 +20,36 @@
   <value>d1</value>
 </property>
   
+<property>
+  <name>yarn.scheduler.minimum-allocation-mb</name>
+  <value>1024</value>
+</property>
+
+<property>
+  <name>yarn.scheduler.maximum-allocation-mb</name>
+  <value>8192</value>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory-mb</name>
+  <value>8192</value>
+</property>
+  
+<property>
+  <name>yarn.nodemanager.aux-services</name>
+  <value>mapreduce_shuffle</value>
+</property>
+
+<property>
+  <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+  <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+</property>
+
+  
 <!--
-If this part is commented, it will use FIFO Scheduler. 
-If you want to use other default scheduler, please uncomment any of the following schedulers
+Below are configurations for schedulers
+If these parts are commented, it will use FIFO Scheduler. 
+If you want to use non-FIFO default scheduler, please uncomment any of the following schedulers
 -->
 
 <!--
@@ -94,12 +121,16 @@ Details: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/Fair
   <value>false</value>
 </property>
 
-
 -->
 
 <!--
-CAPACITY SCHEDULER and some configurations (values here are the defaults)
-Details: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html
+CAPACITY SCHEDULER
+Details and further configuration, please refer to the following site: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html
+<property>
+  <name>yarn.resourcemanager.scheduler.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler..capacity.CapacityScheduler</value>
+</property>
+
 <property>
   <name>yarn.resourcemanager.scheduler.class</name>
   <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler..capacity.CapacityScheduler</value>
@@ -107,29 +138,4 @@ Details: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/Capa
 
 -->
   
-<property>
-  <name>yarn.scheduler.minimum-allocation-mb</name>
-  <value>1024</value>
-</property>
-
-<property>
-  <name>yarn.scheduler.maximum-allocation-mb</name>
-  <value>8192</value>
-</property>
-
-<property>
-  <name>yarn.nodemanager.resource.memory-mb</name>
-  <value>8192</value>
-</property>
-  
-<property>
-  <name>yarn.nodemanager.aux-services</name>
-  <value>mapreduce_shuffle</value>
-</property>
-
-<property>
-  <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
-  <value>org.apache.hadoop.mapred.ShuffleHandler</value>
-</property>
-
 </configuration>
