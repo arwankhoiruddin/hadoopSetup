@@ -5,8 +5,8 @@ sudo apt-get install software-properties-common oracle-java8-installer ansible g
 cd ..
 mkdir research
 cd research
-curl -O https://gist.githubusercontent.com/arwankhoiruddin/b913b4d87f7ec9617016bc28c9e531a7/raw/0514b48d5d340081d669e245c1b38089707b767b/customDockerNetworkVolume.py
-mv customDockerNetworkVolume.py mynet.py
+curl -O https://gist.githubusercontent.com/arwankhoiruddin/36a2bc0b30c60a4101ebed0e6f5d0c3d/raw/15a33e218c8581c81e39f930be5802fc2878f3a2/singleRackContainernet.py
+mv singleRackContainernet.py mynet.py
 chmod +x mynet.py
 
 git clone https://github.com/containernet/containernet.git
