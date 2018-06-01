@@ -126,11 +126,11 @@ Details: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/Fair
 <!--
 CAPACITY SCHEDULER
 Details and further configuration, please refer to the following site: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html
+-->
+  
 <property>
   <name>yarn.resourcemanager.scheduler.class</name>
   <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
 </property>
-
--->
   
 </configuration>
