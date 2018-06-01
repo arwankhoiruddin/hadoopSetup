@@ -118,6 +118,21 @@ Checking connectivity... done.
 root@hadoop:~#
 ```
 
+### Plan the Scheduler
+By default, Hadoop is shipped with three schedulers i.e. FIFO, Capacity and Fair scheduler. If you plan to use FIFO, you can skip this step. However, if you want to use another scheduler, you can do the following step
+
+If you want to use Fair Scheduler
+```
+# cd hadoopSetup
+# git pull origin fairsched
+```
+
+If you want to use Capacity Scheduler
+```
+# cd hadoopSetup
+# git pull origin capacitysched
+```
+
 ### Install everything
 
 In this steps, you will run a shell script that will do the followings:
@@ -130,6 +145,7 @@ In this steps, you will run a shell script that will do the followings:
 
 What you need to do is just run a single shell script i.e. `prepare.sh`. Here's how you do that
 
+If you are not in hadoopSetup directory yet, go to the directory, otherwise, just do the next command
 ```
 # cd hadoopSetup
 # ./prepare.sh
