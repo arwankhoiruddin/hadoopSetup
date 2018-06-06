@@ -5,7 +5,7 @@ sudo apt-get install software-properties-common oracle-java8-installer ansible g
 cd ..
 mkdir research
 cd research
-curl -O https://gist.githubusercontent.com/arwankhoiruddin/36a2bc0b30c60a4101ebed0e6f5d0c3d/raw/e8d8a8c3c8aab63e619a12b71d530812bce8dd11/singleRackContainernet.py
+curl -O https://gist.githubusercontent.com/arwankhoiruddin/36a2bc0b30c60a4101ebed0e6f5d0c3d/raw/ebea5d06fc7e02fccbb72825f4fe1173417089c1/singleRackContainernet.py
 mv singleRackContainernet.py mynet.py
 chmod +x mynet.py
 
