@@ -23,4 +23,5 @@ echo "directories needed by Hadoop are created"
 cp ./*.xml /usr/local/hadoop/etc/hadoop/
 cp hadoop-env.sh /usr/local/hadoop/etc/hadoop/
 cp slaves /usr/local/hadoop/etc/hadoop/
+sudo chown -R hduser:hduser /usr/local/hadoop/
 echo "files have been copied. If you are working on master, copy masters into etc/hadoop folder"
