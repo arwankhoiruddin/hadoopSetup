@@ -36,11 +36,28 @@
   <name>mapreduce.jobhistory.address</name>
   <value>0.0.0.0:10020</value>
 </property>
+  
 <property>
   <name>mapreduce.jobhistory.webapp.address</name>
   <value>0.0.0.0:19888</value>
 </property>
 
+
+<property>
+  <name>mapred.child.java.opts</name>
+  <value>-Xmx6096m</value>
+</property>
+
+<property>
+  <name>mapreduce.map.memory.mb</name>
+  <value>8192</value>
+</property>
+
+<property>
+  <name>mapreduce.reduce.memory.mb</name>
+  <value>8192</value>
+</property>  
+  
 <property>
   <description>To set the value of tmp directory for map and reduce tasks.</description>
   <name>mapreduce.task.tmp.dir</name>
