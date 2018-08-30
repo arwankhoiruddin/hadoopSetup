@@ -42,6 +42,20 @@
   <value>0.0.0.0:19888</value>
 </property>
 
+<property>
+  <name>mapreduce.framework.name</name>
+  <value>yarn</value>
+</property>
+  
+<property>
+  <name>mapreduce.job.maps</name>
+  <value>3</value>
+</property>
+
+<property>
+  <name>mapreduce.job.reduces</name>
+  <value>3</value>
+</property>
 
 <property>
   <name>mapred.child.java.opts</name>
