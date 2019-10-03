@@ -17,7 +17,7 @@
 <!-- Site specific YARN configuration properties -->
 <property>
   <name>yarn.resourcemanager.hostname</name>
-  <value>d1</value>
+  <value>d0</value>
 </property>
   
 <property>
