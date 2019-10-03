@@ -137,13 +137,34 @@ If you want to use Capacity Scheduler
 
 In this steps, you will run a shell script that will do the followings:
 
-1. Install `oracle-java8` and other dependencies
+1. Install `oracle-java8` and other dependencies. Unfortunately now you must install this manually
 2. Download and install `containernet`
 3. Download an example of the emulated network in `containernet`
 4. Pull one of the Docker instance i.e. `arwankhoiruddin/heterodoop`
 5. Download Hadoop
 
-What you need to do is just run a single shell script i.e. `prepare.sh`. Here's how you do that
+What you need to do is just run a single shell script i.e. `prepare.sh`.  But before, you have to add the following lines/variables into /etc/environment to prepare the Java 8 installation
+
+```
+nano /etc/environment
+```
+
+Add the followings into the PATH
+
+```
+/usr/lib/jvm/jdk1.8.0_221/bin:/usr/lib/jvm/jdk1.8.0_221/db/bin:/usr/lib/jvm/jdk1.8.0_221/jre/bin
+```
+
+Then add these into the same file in the new line
+
+```
+J2SDKDIR="/usr/lib/jvm/jdk1.8.0_221"
+J2REDIR="/usr/lib/jvm/jdk1.8.0_221/jre"
+JAVA_HOME="/usr/lib/jvm/jdk1.8.0_221"
+DERBY_HOME="/usr/lib/jvm/jdk1.8.0_221/db"
+```
+
+Now you can run `prepare.sh`.
 
 ```
 # cd hadoopSetup
@@ -196,6 +217,10 @@ cd ../research
 The output will be
 
 ```
+mn.d0
+mn.d1
+mn.d2
+mn.d4
 *** Adding controller
 *** Adding docker containers
 {'publish_all_ports': True, 'dns': [], 'ip': '10.0.0.251', 'network_mode': None, 'cpuset_cpus': None, 'cpu_quota': -1, 'cpu_period': None, 'memswap_limit': None, 'cpu': 1, 'environment': {}, 'volumes': ['/root/hadoopSetup:/hadoopSetup', '/root/research/hd29:/usr/local/hadoop'], 'mem_limit': None, 'port_bindings': {}, 'ports': [], 'cpu_shares': None}
