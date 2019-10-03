@@ -1,10 +1,14 @@
 sudo apt-get update
 sudo apt-get install software-properties-common ansible git aptitude firefox openssh-server
 
+sudo mkdir /usr/lib/jvm
+cd /usr/lib/jvm
+sudo tar -xvzf /root/hadoopSetup/jdk-8u221-linux-x64.tar.gz
+
 cd ..
 mkdir research
 cd research
-curl -O https://gist.githubusercontent.com/arwankhoiruddin/36a2bc0b30c60a4101ebed0e6f5d0c3d/raw/ac1f8cb11e46c9496da56796ea733186430780a4/singleRackContainernet.py
+curl -O https://gist.githubusercontent.com/arwankhoiruddin/36a2bc0b30c60a4101ebed0e6f5d0c3d/raw/ceb9877f716179250508e46b2001e1d8a123e309/singleRackContainernet.py
 mv singleRackContainernet.py mynet.py
 chmod +x mynet.py
 
