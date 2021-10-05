@@ -11,6 +11,10 @@ chmod +x mynet.py
 git clone https://github.com/containernet/containernet.git
 cd containernet/ansible
 sudo ansible-playbook -i "localhost," -c local install.yml
+cd ../mininet
+curl -O https://raw.githubusercontent.com/arwankhoiruddin/heterodoop/master/mininet/node.py
+cd ..
+sudo make develop
 
 sudo groupadd docker
 sudo gpasswd -a $USER docker
@@ -18,11 +22,6 @@ sudo gpasswd -a $USER docker
 sudo docker pull arwankhoiruddin/heterodoop
 
 pip install docker
-
-cd ../mininet
-curl -O https://raw.githubusercontent.com/arwankhoiruddin/heterodoop/master/mininet/node.py
-cd ..
-sudo python setup.py install
 
 cd ..
 curl -O https://archive.apache.org/dist/hadoop/core/hadoop-2.9.1/hadoop-2.9.1.tar.gz
