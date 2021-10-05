@@ -1,18 +1,9 @@
 sudo apt-get update
-sudo apt-get install software-properties-common ansible git aptitude firefox openssh-server
-
-sudo mkdir /usr/lib/jvm
-cd /usr/lib/jvm
-sudo tar -xvzf /root/hadoopSetup/jdk-8u221-linux-x64.tar.gz
-sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_221/bin/java" 0
-sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_221/bin/javac" 0
-sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_221/bin/java
-sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_221/bin/javac
-
+sudo apt-get install software-properties-common ansible git aptitude firefox openssh-server openjdk-8-jdk openjdk-8-jre derby-tools python-pip 
 
 cd ..
-mkdir research
-cd research
+mkdir study
+cd study
 curl -O https://gist.githubusercontent.com/arwankhoiruddin/36a2bc0b30c60a4101ebed0e6f5d0c3d/raw/ceb9877f716179250508e46b2001e1d8a123e309/singleRackContainernet.py
 mv singleRackContainernet.py mynet.py
 chmod +x mynet.py
@@ -24,7 +15,9 @@ sudo ansible-playbook -i "localhost," -c local install.yml
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 
-docker pull arwankhoiruddin/heterodoop
+sudo docker pull arwankhoiruddin/heterodoop
+
+pip install docker
 
 cd ../mininet
 curl -O https://raw.githubusercontent.com/arwankhoiruddin/heterodoop/master/mininet/node.py
