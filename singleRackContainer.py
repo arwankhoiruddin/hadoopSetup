@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Create heterogeneous Hadoop cluster
 Contains of 4 nodes in two different racks
