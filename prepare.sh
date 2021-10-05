@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install software-properties-common ansible git aptitude firefox openssh-server openjdk-8-jdk openjdk-8-jre derby-tools python-pip 
+sudo apt-get install -y software-properties-common ansible git aptitude firefox openssh-server openjdk-8-jdk openjdk-8-jre derby-tools python-pip 
 
 cd ..
 mkdir study
