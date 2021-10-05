@@ -11,8 +11,6 @@ chmod +x mynet.py
 git clone https://github.com/containernet/containernet.git
 cd containernet/ansible
 sudo ansible-playbook -i "localhost," -c local install.yml
-cd ../mininet
-curl -O https://raw.githubusercontent.com/arwankhoiruddin/heterodoop/master/mininet/node.py
 cd ..
 sudo make develop
 
